@@ -1,86 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/main_layout"
-    android:background="#F5F5F5"
-    android:weightSum="4"
-    tools:context=".SignInActivity">
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3"
-        android:gravity="center_horizontal">
-
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            app:srcCompat="@drawable/logo"
-            android:id="@+id/logo"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="100dp"
-            android:contentDescription="STAPP Logo" />
-
-        <TextView
-            android:text="Google Sign In"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/title_text"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
-            android:textColor="#9FC5DB"
-            android:textSize="36sp" />
-
-        <TextView
-            android:text="Signed Out"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/status"
-            android:fadeScrollbars="true"
-            android:textColor="#9FC5DB"
-            android:textSize="14sp" />
-
-        <TextView
-            android:text="TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/detail"
-            android:fadeScrollbars="true"
-            android:gravity="center"
-            android:maxLines="5"
-            android:padding="10dp"
-            android:scrollbars="vertical"
-            android:textColor="#9FC5DB"
-            android:textSize="14sp" />
-
-        <Button
-            android:text="Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/button_optional_action"
-            style="@android:style/Widget.Material.Button"
-            android:visibility="gone"
-            tools:text="Optional Action"
-            tools:visibility="visible" />
-    </LinearLayout>
-
-    <RelativeLayout
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.william.stapp.SignInActivity"
+    android:background="@color/whiteLogin">
+       <!-- Insert Logo Below -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"
+        android:contentDescription="logo" />
+    <!-- Radio Buttons -->
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#F5F5F5">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/logo"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/radio">
 
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/sign_in_button"
+        <RadioButton android:id="@+id/radio_students"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:visibility="visible"
-            tools:visibility="gone" />
+            android:text="@string/Students"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginLeft="15dp"/>
 
-    </RelativeLayout>
-</LinearLayout>
+        <RadioButton android:id="@+id/radio_teachers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Teachers"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginLeft="40dp"/>
+    </RadioGroup>
+    <!-- Google Sign In button -->
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/radio"
+        android:layout_marginTop="55dp"/>
+</RelativeLayout>
+

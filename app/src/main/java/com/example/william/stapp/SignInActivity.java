@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.google.android.gms.auth.api.Auth;
@@ -50,8 +51,8 @@ public class SignInActivity extends AppCompatActivity implements
 
         // Button listeners
         findViewById(R.id.sign_in_button).setOnClickListener(this);
-        findViewById(R.id.sign_out_button).setOnClickListener(this);
-        findViewById(R.id.disconnect_button).setOnClickListener(this);
+        findViewById(R.id.sign_out_button).setOnClickListener(this);//TODO: Delete or Create the button
+        findViewById(R.id.disconnect_button).setOnClickListener(this);//TODO: Delete or Create the button
 
         //Configure sign-in to request the user's ID,email address, and basic profile.
         //ID and basic profile are included in DEFAULT_SIGN_IN.
@@ -200,11 +201,27 @@ public class SignInActivity extends AppCompatActivity implements
             case R.id.sign_in_button:
                 signIn();
                 break;
-            case R.id.sign_out_button:
+            case R.id.sign_out_button: //TODO: Delete or Create the button
                 signOut();
                 break;
-            case R.id.disconnect_button:
+            case R.id.disconnect_button://TODO: Delete or Create the button
                 revokeAccess();
+                break;
+        }
+    }
+    //Radio Button Logic
+    public void onRadioButtonClicked(View view){
+        //to check whether the button is checked or not
+        boolean checked = ((RadioButton)view).isChecked();
+        //check which button is clicked
+        switch (view.getId()){
+            case R.id.radio_students:
+                if (checked)
+                    //TODO: activity insert student activity redirect
+                break;
+            case R.id.radio_teachers:
+                if (checked)
+                    //TODO: insert teacher activity redirect
                 break;
         }
     }
