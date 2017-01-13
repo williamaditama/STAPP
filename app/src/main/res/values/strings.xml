@@ -2,4 +2,9 @@
     <string name="app_name">STAPP</string>
     <string name="Students">text_string</string>
     <string name="Teachers">text_string</string>
+
+    <!--Sign In-->
+    <string name="signed_in_fmt">Signed in as: %s</string>
+
+
 </resources>
