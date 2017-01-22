@@ -26,21 +26,22 @@
         android:layout_below="@+id/logo"
         android:layout_marginStart="50dp"
         android:layout_marginTop="35dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
 
         <RadioButton android:id="@+id/radio_students"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="30dp"
             android:onClick="onRadioButtonClicked"
-            android:text="Students"/>
+            android:text="@string/Students"/>
 
         <RadioButton android:id="@+id/radio_teachers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="65dp"
             android:onClick="onRadioButtonClicked"
-            android:text="Teachers"/>
+            android:text="@string/Teachers"/>
     </RadioGroup>
     <!-- Google Sign In button -->
     <com.google.android.gms.common.SignInButton

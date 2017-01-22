@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">STAPP</string>
-    <string name="Students">text_string</string>
-    <string name="Teachers">text_string</string>
+    <string name="Students">Students</string>
+    <string name="Teachers">Teachers</string>
+    <string name="Logout">Logout</string>
+    <string name="TODO">TODO</string>
+    <string name="title_home">Home</string>
+    <string name="openDrawer"></string>
+    <string name="closeDrawer"></string>
+    <string name="loading"></string>
+    <string name="signed_out"></string>
 
     <!--Sign In-->
     <string name="signed_in_fmt">Signed in as: %s</string>

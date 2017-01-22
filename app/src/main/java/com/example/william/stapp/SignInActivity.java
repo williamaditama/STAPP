@@ -23,7 +23,7 @@ import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
 
 /**
- * Created by William on 01/09/2017.
+ * Created by William & Jason on 01/09/2017.
  */
 
 public class SignInActivity extends AppCompatActivity implements
