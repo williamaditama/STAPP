@@ -17,7 +17,7 @@ import android.view.View;
 public class MenuActivity extends AppCompatActivity {
 
     //First We Declare Titles And Icons For Our Navigation Drawer List View
-    //This Icons And Titles Are holded in an Array as you can see
+    //This Icons And Titles Are hold in an Array as you can see
 
     String TITLES[] = {"Home","Events","Mail","Shop","Travel"};
     int ICONS[] = {R.drawable.ic_home,R.drawable.ic_events,R.drawable.ic_mail,R.drawable.ic_shop,R.drawable.ic_travel}; //TODO:change the symbols Date 22/01/17
