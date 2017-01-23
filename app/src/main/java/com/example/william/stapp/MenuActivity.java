@@ -24,8 +24,8 @@ public class MenuActivity extends ActionBarActivity {
     //Similarly we Create a String Resource for the name and email in the header view
     //And we also create a int resource for profile picture in the header view
 
-    String NAME = "Akash Bangad";
-    String EMAIL = "akash.bangad@android4devs.com"; //TODO: enter user name and user email logic here
+    String NAME = "USER Name";
+    String EMAIL = "USER Email"; //TODO: enter user name and user email logic here
     int PROFILE = R.drawable.ic_profile_roundle;
 
     private Toolbar toolbar;                              // Declaring the Toolbar Object
@@ -61,7 +61,7 @@ public class MenuActivity extends ActionBarActivity {
         mAdapter = new (TITLES,ICONS,NAME,EMAIL,PROFILE);       // Creating the Adapter of MyAdapter class(
         // And passing the titles,icons,header view name, header view email,
         // and header view profile picture
-        //// TODO: 22/01/2017 Edit line according to ITEMS 
+        //// TODO: 22/01/2017 Edit line according to ITEMS
 
         mRecyclerView.setAdapter(mAdapter);                              // Setting the adapter to RecyclerView
 
