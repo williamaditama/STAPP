@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "983810855915",
+    "project_id": "stapp-b9284"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983810855915:android:3ba602ab025cda1d",
+        "android_client_info": {
+          "package_name": "com.example.william.stapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983810855915-661cvmp1mh80faa26pa343dm4d87au5l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.william.stapp",
+            "certificate_hash": "7CA5E4D8D27BA1AA9277E16C835EE022286951DA"
+          }
+        },
+        {
+          "client_id": "983810855915-agri25i11gqgr67a1ge71o0sbii88sfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnQSnO5ddQBKZgsN7GwgSR9BuFcGLEgKc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
