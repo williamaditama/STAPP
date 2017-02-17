@@ -9,6 +9,7 @@
     <string name="closeDrawer"></string>
     <string name="loading">Loading...</string>
     <string name="signed_out">Successfully signed out</string>
+    <string name="delete_todo">Delete TODO</string>
 
     <!--Sign In-->
     <string name="signed_in_fmt">Signed in as: %s</string>
