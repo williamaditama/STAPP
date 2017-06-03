@@ -3,4 +3,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:id="@+id/main_facebook_image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/classroom"
+        circle:name="classroom"/>
+
 </LinearLayout>
